@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ActionQueue" load_steps=3 format=3 uid="uid://c3m83kclph6mp"]
+
+[ext_resource type="Resource" uid="uid://k4ufwn1f5hm5" path="res://scenes/characters/enemy/action_down.tres" id="1_fy8db"]
+[ext_resource type="Script" path="res://custom_resources/action_queue.gd" id="1_jetl3"]
+
+[resource]
+script = ExtResource("1_jetl3")
+queue = Array[Resource("res://custom_resources/action.gd")]([ExtResource("1_fy8db")])
+index_of_next = 0

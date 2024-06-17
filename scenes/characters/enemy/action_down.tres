@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Action" load_steps=2 format=3 uid="uid://k4ufwn1f5hm5"]
+
+[ext_resource type="Script" path="res://custom_resources/action.gd" id="1_uv2ef"]
+
+[resource]
+script = ExtResource("1_uv2ef")
+direction = Vector2(0, 1)
