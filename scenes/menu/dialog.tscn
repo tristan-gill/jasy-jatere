@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxxqvqous8rvq"]
+
+[ext_resource type="Script" path="res://scenes/menu/dialog.gd" id="1_87l7w"]
+
+[node name="Dialog" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_87l7w")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.435294, 0.239216, 0.196078, 0.407843)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -81.6
+offset_top = -45.0
+offset_right = 81.4
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="Label" type="Label" parent="Panel/MarginContainer"]
+custom_minimum_size = Vector2(155, 33)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Oh no, Jasy Jatere has seen you!
+
+A strange sound fill the air as your
+vision fades to black..."
+autowrap_mode = 2
+max_lines_visible = 4
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true

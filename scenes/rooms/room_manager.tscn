@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cuf3s887w7c86"]
+
+[node name="RoomManager" type="Node2D"]

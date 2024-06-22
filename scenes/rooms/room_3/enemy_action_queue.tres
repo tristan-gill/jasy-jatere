@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ActionQueue" load_steps=4 format=3 uid="uid://bajpt10rsadmi"]
+
+[ext_resource type="Resource" uid="uid://bxbawjkjib2q4" path="res://custom_resources/actions/right.tres" id="1_bjnxj"]
+[ext_resource type="Resource" uid="uid://d2bs7hr2lkqwb" path="res://custom_resources/actions/left.tres" id="2_np5so"]
+[ext_resource type="Script" path="res://custom_resources/action_queue.gd" id="3_6le10"]
+
+[resource]
+script = ExtResource("3_6le10")
+queue = Array[Resource("res://custom_resources/action.gd")]([ExtResource("1_bjnxj"), ExtResource("2_np5so"), ExtResource("2_np5so"), ExtResource("1_bjnxj")])
+index_of_next = 0

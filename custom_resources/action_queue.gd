@@ -4,6 +4,9 @@ extends Resource
 @export var queue: Array[Action]
 @export var index_of_next: int = 0
 
+func reset() -> void:
+	index_of_next = 0
+
 func is_empty() -> bool:
 	return queue.is_empty()
 

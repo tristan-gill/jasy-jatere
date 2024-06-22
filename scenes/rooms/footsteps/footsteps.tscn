@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://7w8usx1eal48"]
+
+[ext_resource type="Script" path="res://scenes/rooms/footsteps/footsteps.gd" id="1_w2cf8"]
+
+[node name="Footsteps" type="Node2D"]
+z_index = 2
+script = ExtResource("1_w2cf8")
